@@ -26,4 +26,11 @@ apiRouter.post('/post', (req, res) => {
   })
 })
 
+//编写delete接口
+apiRouter.delete('/delete', (req, res) => {
+  res.send({
+    status: 0,          
+    msg: 'DELETE请求成功！', 
+  })
+})
 module.exports = apiRouter
